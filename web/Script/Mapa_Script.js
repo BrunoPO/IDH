@@ -15,10 +15,10 @@ function initMap() {
 
 function loop_AddPoly() {
         var j =0;
-        for(var i =0;i<paths.length;i++){
-            coords = paths[i];
-            console.log(i);
-            setTimeout(addPoly(i,"name"),finished);
+        for(var i =0;i<muniCoords.length;i++){
+            coords = muniCoords[i];
+            //console.log(i);
+            setTimeout(addPoly(i,muniNome[i]),finished);
             finished=false;
         }
 }
